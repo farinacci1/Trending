@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1072561119960",
+    "project_id": "popping-f5490",
+    "storage_bucket": "popping-f5490.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072561119960:android:9cab9dafef1539dc9b2dad",
+        "android_client_info": {
+          "package_name": "com.example.trending"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072561119960-khb7l3o3onhg50257qmru4eb1rl9vi5n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trending",
+            "certificate_hash": "00d317415e68081d98e56d63501db9feef72d414"
+          }
+        },
+        {
+          "client_id": "1072561119960-ol618lpnj6852ss9su1nrsf7haui7l64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_3SHWVD8ONF6zm5trtabo_d8pFk51EP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072561119960-ol618lpnj6852ss9su1nrsf7haui7l64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
