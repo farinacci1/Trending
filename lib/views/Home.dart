@@ -22,8 +22,6 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-   // UserNotifier userNotifier = Provider.of<UserNotifier>(context, listen: true);
-   // if(userNotifier.userId == "")  Provider.of<UserNotifier>(context, listen: false).userId = FirebaseAuth.instance.currentUser!.uid;
     return Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.black87,//background for posts will be HexColor("#30323b")

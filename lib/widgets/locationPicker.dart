@@ -148,7 +148,17 @@ TextEditingController cityAddress = new TextEditingController();
                                             Navigator.pop(context,{"locale": cityAddress.value.text});
                                           })
                                     ])
-                              : Column(
+                              : (snapshot.connectionState == ConnectionState.waiting) ? Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Padding(
+                                    padding: EdgeInsets.only(top: 6,left: 3,right: 3),
+                                    child: Text(
+                                      "Fetching Location",
+                                      style: TextStyle(fontSize: 16),
+                                    )),
+                                Padding(padding: EdgeInsets.all(10),child:CircularProgressIndicator(valueColor: new AlwaysStoppedAnimation<Color>(Colors.black),)),
+                              ]) :  Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                       Padding(

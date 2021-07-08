@@ -12,7 +12,7 @@ import 'package:trending/services/AuthService.dart';
 import 'package:trending/services/DatabaseService.dart';
 import 'package:trending/views/accountInit.dart';
 import 'package:trending/views/Home.dart';
-
+import 'notifiers/postNotifier.dart';
 import 'notifiers/pinNotifier.dart';
 
 Future<void> main() async {
@@ -29,7 +29,8 @@ class MyApp extends StatelessWidget {
         providers: [
           ChangeNotifierProvider<UserNotifier>(create:(_) => UserNotifier()),
           ChangeNotifierProvider<PinNotifier>(create:(_) => PinNotifier()),
-          ChangeNotifierProvider<EventNotifier>(create:(_) => EventNotifier())
+          ChangeNotifierProvider<EventNotifier>(create:(_) => EventNotifier()),
+          ChangeNotifierProvider<PostNotifier>(create:(_) => PostNotifier())
     ],
         child: MaterialApp(
       title: 'Whats Trending',
